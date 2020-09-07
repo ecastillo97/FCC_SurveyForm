@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Electrolize">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1 id="title" class="text-center">Survey form of the damned</h1>
+            <p id="description" class="description text-center">Fill up to offer souls</p>
+        </header>
+
+        <form id="survey-form" action="https://google.com">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input class="form-control" type="text" id="name" required placeholder="Name of the benefactor">
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input class="form-control" type="email" id="email" required placeholder="Email address">
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Number of offerings</label>
+                <input class="form-control" type="number" id="number" min="1" max="9999" required placeholder="souls offered">
+            </div>
+            <div class="form-group">
+                <p>What is your current level</p>
+                <select class="form-control" name="level" id="dropdown" required>
+                    <option value="noob">Noob</option>
+                    <option value="veteran">Veteran</option>
+                    <option value="priest">Transcender</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Soul/s average attribute</p>
+                <label for="pure">
+                    <input class="input-radio" type="radio" name="attribute" id="pure" value="pure" checked>Pure
+                </label>
+                <label for="tainted">
+                    <input class="input-radio" type="radio" name="attribute" id="tainted" value="tainted">Tainted
+                </label>
+                <label for="demonic">
+                    <input class="input-radio" type="radio" name="attribute" id="demonic" value="demonic">Demonic
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Select classification (Check all that apply)</p>
+                <label for="normal">
+                    <input class="input-checkbox" type="checkbox" name="classification" id="normal" value="normal" checked>
+                    Normal
+                </label>
+                <label for="broken">
+                    <input class="input-checkbox" type="checkbox" name="classification" id="broken" value="broken">
+                    Broken
+                </label>
+                <label for="ancient">
+                    <input class="input-checkbox" type="checkbox" name="classification" id="ancient" value="ancient">
+                    Ancient
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Would you like to offer your soul as well?</p>
+                <label for="yes">
+                    <input class="input-radio" type="radio" name="yes-no" id="yes" value="yes" checked required>Yes
+                </label>
+                <label for="tainted">
+                    <input class="input-radio" type="radio" name="yes-no" id="no" value="no">No
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any last words?</p>
+                <textarea name="lastwords" id="lastwords" class="input-textarea" cols="30" rows="10" placeholder="Write your last words"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="submit-button" type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
